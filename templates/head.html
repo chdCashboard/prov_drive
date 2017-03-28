@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static "bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css" %}"
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col align-self-start">
+                First column
+            </div>
+            <div class="col align-self-center">
+                Second column
+            </div>
+            <div class="col align-self-end">
+                Third column
+            </div>
+        </div>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
